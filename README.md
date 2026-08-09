@@ -1,8 +1,5 @@
-# Prayer Pulse
-
-A minimal, automated README-only prayer tracker for **Banjarmasin (WITA)**.
-
 <!-- SHOLAT_TRACKER_START -->
+
 ## 🕌 Prayer Tracker (WITA)
 
 - **City:** Banjarmasin, Indonesia
@@ -14,28 +11,23 @@ A minimal, automated README-only prayer tracker for **Banjarmasin (WITA)**.
 - **Last updated:** 2026-08-09 21:43:48
 
 ### Daily Prayer Times
-| Prayer | Time |
-|---|---|
-| Fajr | 05:08 |
-| Dhuhr | 12:27 |
-| Asr | 15:48 |
+
+| Prayer  | Time  |
+| ------- | ----- |
+| Fajr    | 05:08 |
+| Dhuhr   | 12:27 |
+| Asr     | 15:48 |
 | Maghrib | 18:27 |
-| Isha | 19:38 |
+| Isha    | 19:38 |
 
 ### ✅ Daily Prayer Window Tracker (Auto)
-| Prayer | Time | Status |
-|---|---|---|
-| Fajr | 05:08 | CLOSED |
-| Dhuhr | 12:27 | CLOSED |
-| Asr | 15:48 | CLOSED |
+
+| Prayer  | Time  | Status |
+| ------- | ----- | ------ |
+| Fajr    | 05:08 | CLOSED |
+| Dhuhr   | 12:27 | CLOSED |
+| Asr     | 15:48 | CLOSED |
 | Maghrib | 18:27 | CLOSED |
-| Isha | 19:38 | OPEN |
+| Isha    | 19:38 | OPEN   |
+
 <!-- SHOLAT_TRACKER_END -->
-
----
-
-## Notes
-
-- Updates every 5 minutes via GitHub Actions.
-- Displays latest available prayer times and current state.
-- If API fails, cached data is used and warning is shown.
