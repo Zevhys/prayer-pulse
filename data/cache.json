@@ -7,5 +7,6 @@
     "Maghrib": "18:27",
     "Isha": "19:38"
   },
-  "source": "api"
+  "source": "api",
+  "method": 11
 }

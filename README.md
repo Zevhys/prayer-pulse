@@ -8,9 +8,10 @@ A minimal, automated README-only prayer tracker for **Banjarmasin (WITA)**.
 - **City:** Banjarmasin, Indonesia
 - **Timezone:** Asia/Makassar (UTC+8)
 - **Today:** Sunday, 09-08-2026
+- **Data source:** AlAdhan API (method 11)
 - **Now: Isha**
 - **Next: Fajr at 05:08**
-- **Last updated:** 2026-08-09 21:38:23
+- **Last updated:** 2026-08-09 21:43:48
 
 ### Daily Prayer Times
 | Prayer | Time |
@@ -20,6 +21,15 @@ A minimal, automated README-only prayer tracker for **Banjarmasin (WITA)**.
 | Asr | 15:48 |
 | Maghrib | 18:27 |
 | Isha | 19:38 |
+
+### ✅ Daily Prayer Window Tracker (Auto)
+| Prayer | Time | Status |
+|---|---|---|
+| Fajr | 05:08 | CLOSED |
+| Dhuhr | 12:27 | CLOSED |
+| Asr | 15:48 | CLOSED |
+| Maghrib | 18:27 | CLOSED |
+| Isha | 19:38 | OPEN |
 <!-- SHOLAT_TRACKER_END -->
 
 ---
