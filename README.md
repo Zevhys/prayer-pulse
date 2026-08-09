@@ -8,9 +8,9 @@ A minimal, automated README-only prayer tracker for **Banjarmasin (WITA)**.
 - **City:** Banjarmasin, Indonesia
 - **Timezone:** Asia/Makassar (UTC+8)
 - **Today:** Sunday, 09-08-2026
-- **Now: Asr**
-- **Next: Maghrib at 18:27**
-- **Last updated:** 2026-08-09 18:00:54
+- **Now: Maghrib**
+- **Next: Isha at 19:38**
+- **Last updated:** 2026-08-09 18:37:44
 
 ### Daily Prayer Times
 | Prayer | Time |
