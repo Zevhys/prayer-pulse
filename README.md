@@ -5,9 +5,9 @@
 - **Timezone:** Asia/Makassar (UTC+8)
 - **Today:** Monday, 10-08-2026
 - **Data source:** AlAdhan API (method 11)
-- **Now: Asr**
-- **Next: Maghrib at 18:27**
-- **Last updated:** 2026-08-10 16:20:01
+- **Now: Maghrib**
+- **Next: Isha at 19:38**
+- **Last updated:** 2026-08-10 18:52:20
 
 ### Daily Prayer Times
 | Prayer | Time |
@@ -23,7 +23,7 @@
 |---|---|---|
 | Fajr | 05:08 | CLOSED |
 | Dhuhr | 12:27 | CLOSED |
-| Asr | 15:48 | OPEN |
-| Maghrib | 18:27 | UPCOMING |
+| Asr | 15:48 | CLOSED |
+| Maghrib | 18:27 | OPEN |
 | Isha | 19:38 | UPCOMING |
 <!-- SHOLAT_TRACKER_END -->
