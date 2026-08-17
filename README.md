@@ -5,9 +5,9 @@
 - **Timezone:** Asia/Makassar (UTC+8)
 - **Today:** Tuesday, 18-08-2026
 - **Data source:** AlAdhan API (method 11)
-- **Now: Isha**
-- **Next: Fajr at 05:07**
-- **Last updated:** 2026-08-18 00:00:16
+- **Now: Fajr**
+- **Next: Dhuhr at 12:26**
+- **Last updated:** 2026-08-18 05:11:54
 
 ### Daily Prayer Times
 | Prayer | Time |
@@ -21,9 +21,9 @@
 ### ✅ Daily Prayer Window Tracker (Auto)
 | Prayer | Time | Status |
 |---|---|---|
-| Fajr | 05:07 | UPCOMING |
+| Fajr | 05:07 | OPEN |
 | Dhuhr | 12:26 | UPCOMING |
 | Asr | 15:45 | UPCOMING |
 | Maghrib | 18:26 | UPCOMING |
-| Isha | 19:36 | OPEN |
+| Isha | 19:36 | UPCOMING |
 <!-- SHOLAT_TRACKER_END -->
