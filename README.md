@@ -3,27 +3,27 @@
 
 - **City:** Banjarmasin, Indonesia
 - **Timezone:** Asia/Makassar (UTC+8)
-- **Today:** Friday, 21-08-2026
+- **Today:** Saturday, 22-08-2026
 - **Data source:** AlAdhan API (method 11)
 - **Now: Isha**
 - **Next: Fajr at 05:06**
-- **Last updated:** 2026-08-21 20:18:01
+- **Last updated:** 2026-08-22 00:03:09
 
 ### Daily Prayer Times
 | Prayer | Time |
 |---|---|
 | Fajr | 05:06 |
 | Dhuhr | 12:25 |
-| Asr | 15:44 |
+| Asr | 15:43 |
 | Maghrib | 18:25 |
-| Isha | 19:36 |
+| Isha | 19:35 |
 
 ### ✅ Daily Prayer Window Tracker (Auto)
 | Prayer | Time | Status |
 |---|---|---|
-| Fajr | 05:06 | CLOSED |
-| Dhuhr | 12:25 | CLOSED |
-| Asr | 15:44 | CLOSED |
-| Maghrib | 18:25 | CLOSED |
-| Isha | 19:36 | OPEN |
+| Fajr | 05:06 | UPCOMING |
+| Dhuhr | 12:25 | UPCOMING |
+| Asr | 15:43 | UPCOMING |
+| Maghrib | 18:25 | UPCOMING |
+| Isha | 19:35 | OPEN |
 <!-- SHOLAT_TRACKER_END -->
