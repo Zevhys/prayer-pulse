@@ -207,9 +207,6 @@ def render_block(
     lines.append(f"- **City:** {CITY}, {COUNTRY}")
     lines.append(f"- **Timezone:** {TIMEZONE} (UTC+8)")
     lines.append(f"- **Today:** {weekday}, {prayer_data['date']}")
-    lines.append(
-        f"- **Data source:** AlAdhan API (method {prayer_data.get('method', API_METHOD)})"
-    )
     lines.append(f"- **{now_line}**")
     lines.append(f"- **{next_line}**")
     if include_last_updated:
@@ -232,7 +229,7 @@ def render_block(
         lines.append(f"| {p} | {prayers[p]} |")
 
     lines.append("")
-    lines.append("### ✅ Daily Prayer Window Tracker (Auto)")
+    lines.append("### Daily Prayer Window Tracker (Auto)")
     lines.append("| Prayer | Time | Status |")
     lines.append("|---|---|---|")
     for p in PRAYER_ORDER:
