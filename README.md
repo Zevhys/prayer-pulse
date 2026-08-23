@@ -6,7 +6,7 @@
 - **Today:** Sunday, 23-08-2026
 - **Now: Isha**
 - **Next: Fajr at 05:05**
-- **Last updated:** 2026-08-23 22:31:08
+- **Last updated:** 2026-08-23 23:07:34
 
 ### Daily Prayer Window Tracker (Auto)
 | Prayer | Time | Status |
@@ -15,5 +15,5 @@
 | Dhuhr | 12:24 - 15:00 | CLOSED |
 | Asr | 15:43 - 18:00 | CLOSED |
 | Maghrib | 18:25 - 19:00 | CLOSED |
-| Isha | 19:35 - 23:00 | OPEN |
+| Isha | 19:35 - 23:00 | CLOSED |
 <!-- SHOLAT_TRACKER_END -->
