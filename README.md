@@ -6,12 +6,12 @@
 - **Today:** Monday, 24-08-2026
 - **Now: Fajr**
 - **Next: Dhuhr at 12:24**
-- **Last updated:** 2026-08-24 05:24:46
+- **Last updated:** 2026-08-24 06:10:17
 
 ### Daily Prayer Window Tracker (Auto)
 | Prayer | Time | Status |
 |---|---|---|
-| Fajr | 05:05 - 06:00 | OPEN |
+| Fajr | 05:05 - 06:00 | CLOSED |
 | Dhuhr | 12:24 - 15:00 | UPCOMING |
 | Asr | 15:42 - 18:00 | UPCOMING |
 | Maghrib | 18:25 - 19:00 | UPCOMING |
