@@ -23,6 +23,15 @@ MAX_RETRIES = 2
 BACKOFF_SECONDS = [2, 5]
 DRIFT_THRESHOLD_MINUTES = 10
 
+# Fixed prayer windows: (start, end)
+PRAYER_WINDOWS = {
+    "Fajr": ("05:00", "06:00"),
+    "Dhuhr": ("12:00", "15:00"),
+    "Asr": ("15:00", "18:00"),
+    "Maghrib": ("18:00", "19:00"),
+    "Isha": ("19:00", "23:00"),
+}
+
 
 def ensure_dirs():
     os.makedirs("data", exist_ok=True)
@@ -121,45 +130,21 @@ def current_state(prayers, now_local: datetime):
     return "Now: Outside prayer window", "Next: Fajr"
 
 
-def prayer_window_statuses(prayers, now_local: datetime):
+def prayer_window_statuses(now_local: datetime):
     now_min = now_local.hour * 60 + now_local.minute
-    mins = {p: hhmm_to_minutes(prayers[p]) for p in PRAYER_ORDER}
-
-    if now_min >= mins["Isha"] or now_min < mins["Fajr"]:
-        open_prayer = "Isha"
-    elif mins["Fajr"] <= now_min < mins["Dhuhr"]:
-        open_prayer = "Fajr"
-    elif mins["Dhuhr"] <= now_min < mins["Asr"]:
-        open_prayer = "Dhuhr"
-    elif mins["Asr"] <= now_min < mins["Maghrib"]:
-        open_prayer = "Asr"
-    elif mins["Maghrib"] <= now_min < mins["Isha"]:
-        open_prayer = "Maghrib"
-    else:
-        open_prayer = None
-
-    if open_prayer == "Isha" and now_min < mins["Fajr"]:
-        return {
-            "Fajr": "UPCOMING",
-            "Dhuhr": "UPCOMING",
-            "Asr": "UPCOMING",
-            "Maghrib": "UPCOMING",
-            "Isha": "OPEN",
-        }
-
     statuses = {}
-    passed = []
-    for p in PRAYER_ORDER:
-        if mins[p] < now_min:
-            passed.append(p)
 
     for p in PRAYER_ORDER:
-        if p == open_prayer:
+        start_hhmm, end_hhmm = PRAYER_WINDOWS[p]
+        start_min = hhmm_to_minutes(start_hhmm)
+        end_min = hhmm_to_minutes(end_hhmm)
+
+        if start_min <= now_min < end_min:
             statuses[p] = "OPEN"
-        elif p in passed:
-            statuses[p] = "CLOSED"
-        else:
+        elif now_min < start_min:
             statuses[p] = "UPCOMING"
+        else:
+            statuses[p] = "CLOSED"
 
     return statuses
 
@@ -199,7 +184,7 @@ def render_block(
 
     prayers = prayer_data["prayers"]
     now_line, next_line = current_state(prayers, now_local)
-    statuses = prayer_window_statuses(prayers, now_local)
+    statuses = prayer_window_statuses(now_local)
 
     lines = []
     lines.append("## 🕌 Prayer Tracker (WITA)")
@@ -222,18 +207,13 @@ def render_block(
         lines.append(f"> ⚠️ {drift_warning}")
         lines.append("")
 
-    lines.append("### Daily Prayer Times")
-    lines.append("| Prayer | Time |")
-    lines.append("|---|---|")
-    for p in PRAYER_ORDER:
-        lines.append(f"| {p} | {prayers[p]} |")
-
-    lines.append("")
     lines.append("### Daily Prayer Window Tracker (Auto)")
     lines.append("| Prayer | Time | Status |")
     lines.append("|---|---|---|")
     for p in PRAYER_ORDER:
-        lines.append(f"| {p} | {prayers[p]} | {statuses[p]} |")
+        _, end_hhmm = PRAYER_WINDOWS[p]
+        time_range = f"{prayers[p]} - {end_hhmm}"
+        lines.append(f"| {p} | {time_range} | {statuses[p]} |")
 
     return "\n".join(lines)
 
