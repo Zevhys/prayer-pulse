@@ -4,9 +4,9 @@
 - **City:** Banjarmasin, Indonesia
 - **Timezone:** Asia/Makassar (UTC+8)
 - **Today:** Monday, 24-08-2026
-- **Now: Maghrib**
-- **Next: Isha at 19:35**
-- **Last updated:** 2026-08-24 19:21:11
+- **Now: Isha**
+- **Next: Fajr at 05:05**
+- **Last updated:** 2026-08-24 19:48:08
 
 ### Daily Prayer Window Tracker (Auto)
 | Prayer | Time | Status |
