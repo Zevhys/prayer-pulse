@@ -226,12 +226,6 @@ def extract_tracker_block(readme_text: str) -> str:
     return m.group(1).strip() if m else ""
 
 
-def normalize_for_compare(text: str) -> str:
-    lines = text.splitlines()
-    filtered = [ln for ln in lines if not ln.strip().startswith("- **Last updated:**")]
-    return "\n".join(filtered).strip()
-
-
 def inject_readme_block(block):
     if not os.path.exists(README_PATH):
         with open(README_PATH, "w", encoding="utf-8") as f:
@@ -241,10 +235,7 @@ def inject_readme_block(block):
         content = f.read()
 
     old_block = extract_tracker_block(content)
-    old_norm = normalize_for_compare(old_block)
-    new_norm = normalize_for_compare(block)
-
-    if old_norm == new_norm and old_block:
+    if old_block == block and old_block:
         return False
 
     pattern = re.compile(
