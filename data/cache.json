@@ -1,11 +1,11 @@
 {
-  "date": "25-11-2026",
+  "date": "26-11-2026",
   "prayers": {
     "Fajr": "04:37",
     "Dhuhr": "12:09",
     "Asr": "15:34",
-    "Maghrib": "18:17",
-    "Isha": "19:31"
+    "Maghrib": "18:18",
+    "Isha": "19:32"
   },
   "source": "api",
   "method": 11
